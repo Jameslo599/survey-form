@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=-1"> 
+        <title>Zen Sushi & Grill Survey Form</title>
+    </head>
+    <style>
+        lorem ipsum
+    </style>
+    <body>
+    <h1 id="title">Zen Sushi & Grill Survey Form </h1>
+    <p id="description">Thank you for your continued patronage and valuable feedback</p>
+    <form id="survey-form"><label 
+    for="name" id="name-label">Name<input
+    id="name"
+    type="text" required
+    name="name"
+    placeholder="Enter your name"></label>
+    <label
+    for="email" id="email-label">Email<input
+    id="email"
+    type="email" required
+    name="email" 
+    placeholder="Enter your email"></label>
+    <label
+    for="number" id="number-label">Age<input 
+    id="number"
+    type="number" required min="10" max="100"
+    name="number"
+    placeholder="Enter age"></label></form>
+    <p>How long have you been a loyal patron?</p>
+   <form id="survey-form">
+    <select id="dropdown" required>
+        <option value="" selected disabled>Select a time period</option>
+        <option value="1">0-6 months</option>
+        <option value="2">6 months-1 year</option>
+        <option value="3">1-2 years</option>
+        <option value="4">2+ years</option>
+    </select></form>
+    <p>Would you recommend Zen Sushi & Grill to a friend?</p>
+        <form id="survey-form">
+        <label 
+        for="definitely"><input 
+        id="definitely" 
+        type="radio" 
+        name="satisfaction" 
+        value="definitely">
+        Definitely</label>
+        <label 
+        for="maybe"><input 
+        id="maybe" 
+        type="radio" 
+        name="satisfaction" 
+        value="maybe">
+        Maybe</label>
+        <label 
+        for="not sure"><input 
+        id="not sure" 
+        type="radio" 
+        name="satisfaction" 
+        value="not sure">
+        Not Sure</label></form>
+    <p>What is your favorite aspect of Zen Sushi & Grill?</p>
+    <select>
+        <option value="" selected disabled>Select an option</option>
+        <option value="1">Sushi</option>
+        <option value="2">Hibachi</option>
+        <option value="3">Service</option>
+        <option value="4">Atmosphere</option>
+    </select>
+    <p>What would you like to see improved? (Check all that apply)</p>
+        <form id="survey-form"><label 
+        for="food"><input 
+        id="food" 
+        type="checkbox" 
+        name="improve" 
+        value="food">
+        Food</label>
+        <label 
+        for="service"><input 
+        id="service" 
+        type="checkbox" 
+        name="improve" 
+        value="service">
+        Service</label>
+        <label 
+        for="alcohol"><input 
+        id="alcohol" 
+        type="checkbox" 
+        name="improve" 
+        value="alcohol">
+        Alcoholic Beverages</label>
+        <label 
+        for="ambience"><input 
+        id="ambience" 
+        type="checkbox" 
+        name="improve" 
+        value="ambience">
+        Ambience</label>
+        <label 
+        for="cleanliness"><input 
+        id="cleanliness" 
+        type="checkbox" 
+        name="improve" 
+        value="cleanliness">
+        Cleanliness</label></form>
+    <p>Any comments or suggestions?</p>
+    <form id="survey-form">
+    <textarea name="suggest" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
+        <label 
+        for="submit"><input 
+        id="submit" 
+        type="submit" 
+        name="submitbutton" 
+        value="submit"></label></form>
+
+
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
