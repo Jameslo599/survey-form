@@ -6,40 +6,93 @@
         <title>Zen Sushi & Grill Survey Form</title>
     </head>
     <style>
-        lorem ipsum
+        body {
+            background-image: url(https://snowfoxnews.com/wp-content/uploads/2017/01/bigstock-Sushi-Set-On-Dark-Background-98021630.jpg);
+            background-repeat: no-repeat;
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            margin: auto;
+            background-position:center;
+            background-blend-mode: darken;
+        }
+        #subject {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        
+        }
+        #surv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+        #name {
+            width: 500px;
+        }
+        #email {
+            width: 500px;
+        }
+        #number {
+            width: 501px;
+        }
+        #box {
+            width: 565px;
+        }
+        #submit {
+            width: 565px;
+            margin-top: 10px;
+            height: 50px;
+        }
     </style>
     <body>
+    <div id="subject">
     <h1 id="title">Zen Sushi & Grill Survey Form </h1>
-    <p id="description">Thank you for your continued patronage and valuable feedback</p>
-    <form id="survey-form"><label 
-    for="name" id="name-label">Name<input
+    <p id="description">Thank you for your continued patronage and valuable feedback</p></div>
+    <div id="surv">
+    <form id="survey-form" ><label 
+    for="name" id="name-label">Name 
+    <br><br>
+    <input
     id="name"
     type="text" required
     name="name"
     placeholder="Enter your name"></label>
+    <br>
+    <br>
+    <br>
     <label
-    for="email" id="email-label">Email<input
+    for="email" id="email-label">Email 
+    <br><br>
+    <input
     id="email"
     type="email" required
     name="email" 
     placeholder="Enter your email"></label>
+    <br>
+    <br>
+    <br>
     <label
-    for="number" id="number-label">Age<input 
+    for="number" id="number-label">Age 
+    <br><br>
+    <input 
     id="number"
     type="number" required min="10" max="100"
     name="number"
-    placeholder="Enter age"></label></form>
+    placeholder="Enter age"></label>
     <p>How long have you been a loyal patron?</p>
-   <form id="survey-form">
     <select id="dropdown" required>
         <option value="" selected disabled>Select a time period</option>
         <option value="1">0-6 months</option>
         <option value="2">6 months-1 year</option>
         <option value="3">1-2 years</option>
         <option value="4">2+ years</option>
-    </select></form>
+    </select>
     <p>Would you recommend Zen Sushi & Grill to a friend?</p>
-        <form id="survey-form">
         <label 
         for="definitely"><input 
         id="definitely" 
@@ -60,7 +113,7 @@
         type="radio" 
         name="satisfaction" 
         value="not sure">
-        Not Sure</label></form>
+        Not Sure</label>
     <p>What is your favorite aspect of Zen Sushi & Grill?</p>
     <select>
         <option value="" selected disabled>Select an option</option>
@@ -70,7 +123,7 @@
         <option value="4">Atmosphere</option>
     </select>
     <p>What would you like to see improved? (Check all that apply)</p>
-        <form id="survey-form"><label 
+        <label 
         for="food"><input 
         id="food" 
         type="checkbox" 
@@ -104,10 +157,10 @@
         type="checkbox" 
         name="improve" 
         value="cleanliness">
-        Cleanliness</label></form>
+        Cleanliness</label>
     <p>Any comments or suggestions?</p>
-    <form id="survey-form">
-    <textarea name="suggest" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
+    <textarea id="box" name="suggest" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
+    <br>
         <label 
         for="submit"><input 
         id="submit" 
@@ -115,11 +168,7 @@
         name="submitbutton" 
         value="submit"></label></form>
 
-
-
-
-
-
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
     </body>
 </html>
